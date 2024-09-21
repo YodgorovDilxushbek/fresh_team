@@ -1,3 +1,96 @@
-@import "./font.scss";
-@import "./normalize.scss";
+@import "./font";
+@import "./normalize";
+@import "./header";
+@import "./global";
+// CATEGORY
+.category {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.category__container {
+  display: flex;
+  gap: 3.2rem;
+}
+.category__block-menu {
+  width: 269px;
+  .category__title {
+    color: rgb(21, 21, 21);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin-bottom: 1.6rem;
+  }
 
+  .category__link {
+    display: block;
+    color: rgb(106, 152, 60);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-decoration-line: underline;
+  }
+  .category__link:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+  .category__links {
+    margin-bottom: 4.8rem;
+  }
+  .category__btn-menu {
+    padding: 1.25rem 1.6rem;
+    border-radius: 12px;
+    background: rgb(245, 245, 245);
+    color: rgb(21, 21, 21);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    display: inline-block;
+    img {
+      margin-left: 1.2rem;
+    }
+  }
+}
+.category__block {
+  background: url("../images/category-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  width: 419px;
+  padding: 4.8rem 0 3.2rem 3.2rem;
+  .category__info {
+    h4 {
+      color: rgb(106, 152, 60);
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 0%;
+      margin-bottom: 0.8rem;
+    }
+    h3 {
+      /* S3/Default */
+      color: rgb(21, 21, 21);
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: 0%;
+      margin-bottom: 9.4rem;
+    }
+    .category__btn {
+      padding: 1.2rem 1.6rem;
+      background: transparent;
+      color: rgb(21, 21, 21);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 23px;
+      letter-spacing: 0%;
+      border: 2px solid rgb(146, 192, 100);
+      border-radius: 12px;
+      img {
+        margin-left: 6px;
+      }
+    }
+  }
+}
